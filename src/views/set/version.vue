@@ -53,7 +53,7 @@
           <span>{{ scope.row.path }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="创建时间 " align="center" width="200">
+      <el-table-column label="创建时间 " align="center" width="200" sortable>
         <template slot-scope="scope">
           <span>{{ scope.row.created_at }}</span>
         </template>

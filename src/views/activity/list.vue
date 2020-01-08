@@ -1648,7 +1648,7 @@ export default {
       dialogFormVisibleAdmin: false,
       dialogOrderSetadd:false,
       dialogOrderSet: false,
-      dialogEsc: false,
+      dialogEsc: true,
       dialogStatus: "",
       menu: null,
       textMap: {
@@ -1861,7 +1861,7 @@ export default {
     },
     // 活动管理tabs切换
      handleClick(tab, event, row) {
-        
+
         if(tab.name == 'first') {
         	// 触发‘配置管理’事件
         	this.adminList(row)
@@ -1929,7 +1929,7 @@ export default {
     },
     // 活动需求列表
     demandList(row) {
-     
+
       // this.dialogDemand = true;
       this.listLoading1 = true;
       getDemandList(this.DemandlistQuery).then(response => {
@@ -1945,7 +1945,7 @@ export default {
     },
     // 活动品牌列表
     brandList(row) {
-   
+
       // this.dialogBrand = true;
       this.listLoading1 = true;
       getBrandList(this.brandlistQuery).then(response => {
@@ -1960,7 +1960,7 @@ export default {
     },
     // 回访列表
     orderReviewList(row) {
-    
+
       // this.dialogOrderReview = true;
       this.listLoading3 = true;
       getOrderListReview(this.OrderlistReviewQuery).then(response => {
@@ -1975,7 +1975,7 @@ export default {
     },
     // 客户签到列表
     ordersignList(row) {
-   
+
       // this.dialogOrdersign = true;
       this.listLoading3 = true;
       getOrderListSign(this.OrderlistSignQuery).then(response => {
@@ -1990,7 +1990,7 @@ export default {
     },
     // 订单列表
     orderList(row) {
-    
+
       // this.dialogOrder = true;
       this.listLoading1 = true;
       getOrderList(this.OrderlistQuery).then(response => {
@@ -2005,7 +2005,7 @@ export default {
     },
     // 管理员列表
     adminList(row) {
-     
+
       // this.dialogAdmin = true;
       this.listLoading2 = true;
       getAdminerList(this.AdminlistQuery).then(response => {
